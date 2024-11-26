@@ -63,10 +63,10 @@ Registrar préstamos y devoluciones.
 Consultar reportes sobre libros y estudiantes.
 
 
-Autores
-Rafael Campos - Contacto.
-Emilio Espino - Contacto.
-Carlos Escamilla - Contacto.
+Autores: 
+Rafael Campos - 
+Emilio Espino - 
+Carlos Escamilla
 
 
 Proyecto desarrollado como parte de la materia Programación Avanzada.
