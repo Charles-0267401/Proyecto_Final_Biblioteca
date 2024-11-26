@@ -64,9 +64,9 @@ Consultar reportes sobre libros y estudiantes.
 
 
 Autores
-[Rafael Campos] - Contacto
-[Emilio Espino] - Contacto
-[Carlos Escamilla] - Contacto
+Rafael Campos - Contacto.
+Emilio Espino - Contacto.
+Carlos Escamilla - Contacto.
 
 
 Proyecto desarrollado como parte de la materia Programación Avanzada.
