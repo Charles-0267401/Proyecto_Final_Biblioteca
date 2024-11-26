@@ -31,18 +31,20 @@ El sistema automatiza la gestión de una biblioteca universitaria utilizando ope
 ## Estructura del Proyecto
 
 ### Archivo principal con el menú interactivo
+[main.cpp](/Proyecto_biblioteca/main_proyecto.cpp)
 
-[Main](/Proyecto_biblioteca/main_proyecto.cpp)
-
- 
 ### Implementación de la clase Libro y operaciones con archivos 
-├── libro_proyecto.cpp 
+[libro.cpp](/Proyecto_biblioteca/libro_proyecto.cpp)
+
 ### Implementación de la clase Estudiante y gestión de préstamos
-├── estudiante_proyecto.cpp  
+[estudiante.cpp](/Proyecto_biblioteca/estudiante_proyecto.cpp)
+
 ### Archivo de encabezado con las definiciones de clases y funciones
-├── Header.h  
+[Header.h](/Proyecto_biblioteca/Header.h)
+
 ### Archivo de entrada con datos de libros
-├── best-selling-books.csv  
+[Header.h](/Proyecto_biblioteca/best-selling-books.csv)
+
 ### Este archivo
 └── README.md 
 
