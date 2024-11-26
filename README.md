@@ -31,7 +31,10 @@ El sistema automatiza la gestión de una biblioteca universitaria utilizando ope
 ## Estructura del Proyecto
 
 ### Archivo principal con el menú interactivo
-├── main_proyecto.cpp 
+
+[Main](/main_proyecto.cpp)
+
+ 
 ### Implementación de la clase Libro y operaciones con archivos 
 ├── libro_proyecto.cpp 
 ### Implementación de la clase Estudiante y gestión de préstamos
