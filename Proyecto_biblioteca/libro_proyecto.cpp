@@ -180,6 +180,9 @@ void actualizarRegistroLibro(const string& nombreArchivo, int indice_libro, int 
 
 void reportarLibrosNoDisponibles(const string& nombreArchivo) {
     ifstream archivo(nombreArchivo, ios::binary);
+    // definimos el archivo de texto
+    ofstream archivoTXT("comoUstedesQuieran.txt", ios::out);
+
     
     //filtro 
     if (!archivo.is_open()) {
@@ -192,6 +195,9 @@ void reportarLibrosNoDisponibles(const string& nombreArchivo) {
     while (archivo.read(reinterpret_cast<char*>(&libro), sizeof(Libro))) {
         if (libro.cantidad_disponible == 0) {
             cout << " - " << libro.titulo << " (Indice: " << libro.indice << ")" << endl;
+            // funcion agregada en la presentacion para que mande el flujo de salida al archivo de texto
+            archivoTXT << " - " << libro.titulo << " (Indice: " << libro.indice << ")" << endl;
+
         }
     }
 
