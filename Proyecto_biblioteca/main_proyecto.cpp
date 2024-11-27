@@ -1,15 +1,18 @@
 #include "Header.h"
 
 int main() {
-    string archivoCSV = "best-selling-books.csv";
+    // cout << sizeof(Libro) << endl;
+    
+    string archivoCSV = "best-selling-books.csv"; // definir nombres de los archivos
     string archivoBinario = "libros.bin";
 
-    vector<Libro> libros = leerCSVSecuencial(archivoCSV);
-    crearArchivoBinarioDesdeCSV(archivoBinario, libros);
+    vector<Libro> libros = leerCSVSecuencial(archivoCSV); // vector tipo libro llamado libros
+    crearArchivoBinarioDesdeCSV(archivoBinario, libros); // crea el binario 
 
+    // vector de tipo Estudiante
     vector<Estudiante> estudiantes;
     for (int i = 1; i <= 10; ++i) {
-        estudiantes.emplace_back(i);
+        estudiantes.emplace_back(i); // emplace_back es más eficiente que push_back en este caso pq construye el objeto directamente dentro del vector y evita una copia temporal.
     }
 
     int opcion = 0;
@@ -29,7 +32,7 @@ int main() {
             cin >> indice_libro;
 
             if (id_estudiante > 0 && id_estudiante <= 10) {
-                estudiantes[id_estudiante - 1].prestarLibro(indice_libro, archivoBinario);
+                estudiantes[id_estudiante - 1].prestarLibro(indice_libro, archivoBinario); // se resta 1 pq el vector inicia en 0
             }
             else {
                 cout << "El ID del estudiante es invalido." << endl;
@@ -57,7 +60,7 @@ int main() {
             cin >> id_estudiante;
 
             if (id_estudiante > 0 && id_estudiante <= 10) {
-                estudiantes[id_estudiante - 1].listarLibrosPrestados();
+                estudiantes[id_estudiante - 1].listarLibrosPrestados(); // getter de libros que tiene el estudiante
             }
             else {
                 cout << "El ID del estudiante es invalido." << endl;
