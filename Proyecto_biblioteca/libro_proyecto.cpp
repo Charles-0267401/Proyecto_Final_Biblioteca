@@ -200,6 +200,6 @@ void reportarLibrosNoDisponibles(const string& nombreArchivo) {
 
         }
     }
-
+    archivoTXT.close();
     archivo.close();
 }
